@@ -16,12 +16,12 @@ class CreateDetailsTable extends Migration
         Schema::create('details', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('reference_code');
-            $table->string('full_name');
-            $table->string('address');
+            $table->string('full_name')->nullable();
+            $table->string('address')->nullable();
             $table->string('phone');
             $table->string('email');
-            $table->string('date_receipt');
-            $table->string('time_receipt');
+            $table->string('date_receipt')->nullable();
+            $table->string('time_receipt')->nullable();
             $table->timestamps();
         });
     }
