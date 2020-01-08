@@ -62,7 +62,7 @@
                     <div class="col-lg-12">
                         <a href="/{{ $token }}/product/{{ str_replace(' ', '-', $product->name) }}">
                             <div class="card">
-                                <img src="{{ asset('products/' . $product->avatar_first) }}" alt="" width="250">
+                                <img src="{{ asset('products/' . $product->avatar_first) }}" alt="" width="100%">
                                 <h1>{{ $product->name }}</h1>
                                 <p class="price">₱{{ number_format( $product->price, 2, '.', '' ) }}</p>
                                 <p class="desc">{{ $product->description }}</p>
