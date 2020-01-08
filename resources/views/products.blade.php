@@ -23,7 +23,7 @@
             outline: 0;
             padding: 12px;
             color: white;
-            background-color: #000;
+            background-color: #F88E37;
             text-align: center;
             cursor: pointer;
             width: 100%;
@@ -61,7 +61,7 @@
             <div class="row">
                 @foreach( $products as $product )
                     <div class="col-lg-6">
-                        <a href="/{{ $token }}/product/{{ str_replace(' ', '-', $product->name) }}">
+                        <a href="/{{ $token }}/ticket/{{ str_replace(' ', '-', $product->name) }}">
                             <div class="card">
                                 <img src="{{ asset('products/' . $product->avatar_first) }}" alt="" width="100%">
                                 <h1>{{ $product->name }}</h1>

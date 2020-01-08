@@ -19,12 +19,12 @@ $( function () {
                 var p_quantity = $("#product_quantity");
 
                 if ( quantity < 1 ) {
-                    $("#price_text").text( "₱" + price );
+                    $("#price_text").text( "₱" + price + ".00");
                     p_quantity.val(1);
                 }
 
                 else if ( quantity !== "" && quantity !== undefined) {
-                    $("#price_text").text( "₱" + text );
+                    $("#price_text").text( "₱" + text + ".00");
                     p_quantity.val(quantity);
                 }
 
