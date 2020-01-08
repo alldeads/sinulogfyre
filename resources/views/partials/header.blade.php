@@ -9,9 +9,18 @@
             <div class="search-form mx-md-auto">
             <div>&nbsp;</div>
             </div>
-            <div class="forms mt-md-0 mt-2">
-                <a href="/login" class="btn"><span class="fa fa-user-circle-o"></span>Sign In</a>
-            </div>
+
+            @auth
+                <div class="forms mt-md-0 mt-2">
+                    <a href="/home" class="btn"><span class="fa fa-user-circle-o"></span>Home</a>
+                </div>
+
+            @else 
+
+                <div class="forms mt-md-0 mt-2">
+                    <a href="/login" class="btn"><span class="fa fa-user-circle-o"></span>Sign In</a>
+                </div>
+            @endauth
         </div>
         <nav class="text-center">
             <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
