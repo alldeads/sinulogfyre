@@ -19,6 +19,7 @@ class CreatePaymentsTable extends Migration
             $table->integer('user_id');
             $table->integer('details_id');
             $table->integer('order_id');
+            $table->enum('status', ['pending', 'paid', 'declined', 'duplicated']);
             $table->timestamps();
         });
     }
