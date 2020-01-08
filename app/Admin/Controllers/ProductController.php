@@ -30,13 +30,7 @@ class ProductController extends AdminController
         $grid->column('name', __('Name'));
         $grid->column('price', __('Price'));
         $grid->column('quantity', __('Quantity'));
-        $grid->column('brief', __('Brief'));
-        $grid->column('description', __('Description'));
-        $grid->column('avatar_first', __('Avatar first'));
-        $grid->column('avatar_second', __('Avatar second'));
-        $grid->column('avatar_third', __('Avatar third'));
         $grid->column('created_at', __('Created at'));
-        $grid->column('updated_at', __('Updated at'));
 
         return $grid;
     }
@@ -80,9 +74,9 @@ class ProductController extends AdminController
         $form->number('quantity', __('Quantity'));
         $form->textarea('brief', __('Brief'));
         $form->textarea('description', __('Description'));
-        $form->textarea('avatar_first', __('Avatar first'));
-        $form->textarea('avatar_second', __('Avatar second'));
-        $form->textarea('avatar_third', __('Avatar third'));
+        $form->image('avatar_first', __('Avatar first'));
+        $form->image('avatar_second', __('Avatar second'));
+        $form->image('avatar_third', __('Avatar third'));
 
         return $form;
     }
