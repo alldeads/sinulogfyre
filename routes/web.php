@@ -20,5 +20,7 @@ Auth::routes(['register' => false]);
 Route::get('/home', 'DashboardController@index')->name('home');
 Route::get('/sales', 'DashboardController@sales')->name('sales');
 
+Route::get('/beginners_guide', 'HomeController@beginners')->name('beg');
+
 
 Route::get('/{token}/tickets', 'HomeController@products')->name('products');

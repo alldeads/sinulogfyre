@@ -30,52 +30,27 @@
                 
 
                 <div class="col-lg-12 col-sm-6 about-right mt-lg-0 mt-4">
-                    <h2> FREQUENTLY ASKED QUESTIONS</h2><br><br>
+                    <h2> PROMOTER GUIDE:</h2><br><br>
 
-                    <h3> How Much Is the Package?</h3><br>
+                    <h3> How to Earn?</h3><br>
 
-                    <p> Our Package is <span style="color: #c21212;">P1,500</span> inclusive of one product of your choice. After purchase, you will have <span style="color: #c21212;">full access</span> to our discounts, training videos, your referral link with video presentation to grow your sales team, and your product link to start your drop shipping business!</p><br><br>
+                    <p> Sell physical tickets or sell online using your own website that we provide to you. You can also earn by becoming a Promoter Manager by recruiting a team of promoters to sell for you. Just contact the organizer in-charge.</p><br><br>
 
-                    <h3> How Do I Pay / Activate Account?</h3><br>
+                    <h3> How Much are the Commissions?</h3><br>
 
-                    <p> After registering click the "Pay Now" function & <span style="color: #c21212;">click any of the payment options</span> available. Your account will be activated within 24 to 48 hours. Your product will be shipped within the Philippines in 1 to 7 days.</p><br></br>
+                    <p> For every ticket sold you earn 10% from every ticket sold and can be seen when you login to your account. You also earn an overriding bonus of 5% from the sales of the team under you.</p><br></br>
 
-                    <h3> How Do I Start Selling / Drop Shipping?</h3><br>
+                    <h3> How Do I Sell?</h3><br>
 
-                    <p> Go to your dashboard and copy your <span style="color: #c21212;">"Product Link"</span> and send to your friends or post on your social media accounts. Include <span style="color: #c21212;">photos and a good caption</span> for better sales results.</p>
+                    <p> Aside from selling physical tickets, just login to your account with your email address & the password we provide. You can find the "TICKET LINK", just copy the link and send to your friends. </p><br><br>
 
-                    <p> If a person makes purchase, we ship the product for you! Sales-profit are given after payment.</p><br></br>
+                    <h3> How to Promote? </h3><br>
 
-                    <h3> How Do I Earn from My Sales Team?</h3><br>
+                    <p> Just post pictures of the event on social media, add a nice & inviting caption ending with "PM ME or buy here: <insert your ticket link>".</p><br><br>
 
-                    <p> For every referral we give you Raffle Entries for the month. For every pairing sale (matching bonus; Left/Right) you earn P200 down your line/team (Safety-nets apply). You also earn percentage of sales from products purchased or sold under your personal team.</p>
+                    <h3> How do my Customers Pay using the link? </h3><br>
 
-                    <p> You can <span style="color: #c21212;">change the position</span> (Left/Right) settings by logging in to your dashboard & click <span style="color: #c21212;">"My Profile"</span>.</p><br></br>
-
-                    <h3> How Do I Grow My Sales Team?</h3><br>
-
-                    <p> You can grow your SALESTEAM by referring new members through referring them directly or through your <span style="color: #c21212;">"referral link"</span> on found on your account dashboard.</p><br></br>
-
-                    <h3> How Does the Daily Raffle Rewards Work?</h3><br>
-
-                    <p> Claim raffle entries by logging in everyday (Refresh at 12:00 PH Time) Our raffle draw is done after the end of every month, with multiple winners getting prizes such as: <span style="color: #c21212;">TRAVEL PACKAGES, GADGETS, MOBILE PHONES & MORE!</span></p><br></br>
-
-                    <h3> How to Withdraw Commissions?</h3><br>
-
-                    <p> Log-in to your account & click <span style="color: #c21212;">"Encashment"</span> and choose the options available (charges will apply). Our cut-off for encashment requests are every Saturday, and will be paid 1 to 10 days after depending on volume of requests.</p>
-
-                    <p> Due to the high volume of requests our minimum withdrawal amount is P2,000. </span></p><br></br>
-
-                    <h3> What are the Company Safety-nets?</h3><br>
-
-                    <p> Our vision for the company is to benefit not just our business, but all our distributors, drop shippers, and product users for the long term. In this regard, not only have we given great benefits with a great system, we have applied safety-measures to assure our long term goals.</p>
-
-                    <ol>
-                        <li> The 1st Pair/Match Bonus = P 0.00 </li>
-                        <li> Every 5th Pair/Match Bonus = 100 Raffle Entries </li>
-                        <li> Maximum Monthly Pair/Match Bonus = P60,000 </li>
-                        <li> 10% Encashment Process Fee + Remittance Charges</li>
-                    </ol>
+                    <p> When they click the link, they choose the ticket they need and they will be provided with payment options such as: PAYPAL, PALAWAN, GCASH, PAYPAL (CREDIT/DEBIT CARD).</p>
                 </div>
 
                 {{-- <div class="col-lg-12 col-sm-6 about-right mt-lg-0 mt-4">

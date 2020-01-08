@@ -25,4 +25,9 @@ class HomeController extends Controller
 
         return view('products', compact('products', 'token'));
     }
+
+    public function beginners()
+    {
+        return view('beginners');
+    }
 }
