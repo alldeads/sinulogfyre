@@ -18,3 +18,4 @@ Route::get('/', function () {
 Auth::routes(['register' => false]);
 
 Route::get('/home', 'DashboardController@index')->name('home');
+Route::get('/sales', 'DashboardController@sales')->name('sales');

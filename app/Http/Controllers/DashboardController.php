@@ -34,22 +34,15 @@ class DashboardController extends Controller
         return view('home', compact('init'));
     }
 
-    public function profile( Request $request )
+    public function sales()
     {
         $init = array(
-            "page_header" => "Profile",
-            "page_icon"   => "fa-dashboard",
-            "page_name"   => "Profile"
+            "page_header" => "Sales",
+            "page_icon"   => "fa-money",
+            "page_name"   => "Report"
         );
 
-        if ( count( $request->all() ) > 0 ) {
-
-            $result = User::update_user( $request );
-        }
-
-        $user = auth()->user();
-
-        return view('dashboard.profile', compact('init', 'user'));
+        return view('sales', compact('init'));
     }
 
     public function history()

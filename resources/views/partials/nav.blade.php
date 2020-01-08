@@ -49,11 +49,11 @@
             </li>
 
             <li class="active">
-                <a href="/dashboard/home"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                <a href="/home"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
             </li>
 
             <li>
-                <a href="/dashboard/encashment"><i class="fa fa-fw fa-money"></i> Sales Report</a>
+                <a href="/sales"><i class="fa fa-fw fa-money"></i> Sales Report</a>
             </li>   
             {{-- <li>
                 <a href="javascript:;" data-toggle="collapse" data-target="#demo9"><i class="fa fa-fw fa-sitemap"></i> Network <span class="label label-danger pull-right">{{ count( $left_downlines ) + count( $right_downlines ) }}</span></a>

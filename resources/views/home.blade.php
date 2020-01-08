@@ -36,5 +36,5 @@
         </div>
     </div>
 
-    {{-- @include("dashboard.summary") --}}
+    @include("partials.summary")
 @endsection
