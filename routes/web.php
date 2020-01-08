@@ -21,4 +21,4 @@ Route::get('/home', 'DashboardController@index')->name('home');
 Route::get('/sales', 'DashboardController@sales')->name('sales');
 
 
-Route::get('/{token}/products', 'HomeController@products')->name('products');
+Route::get('/{token}/tickets', 'HomeController@products')->name('products');
