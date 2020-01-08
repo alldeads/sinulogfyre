@@ -36,6 +36,7 @@
 
         .desc {
             text-align: justify;
+            padding: 15px;
         }
 
     </style>
@@ -59,7 +60,7 @@
         <div class="container">
             <div class="row">
                 @foreach( $products as $product )
-                    <div class="col-lg-12">
+                    <div class="col-lg-6">
                         <a href="/{{ $token }}/product/{{ str_replace(' ', '-', $product->name) }}">
                             <div class="card">
                                 <img src="{{ asset('products/' . $product->avatar_first) }}" alt="" width="100%">
