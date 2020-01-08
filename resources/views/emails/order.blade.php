@@ -1,12 +1,12 @@
 @component('mail::message')
-# Introduction
+Hi {{ $payment->details->full_name }}
 
-The body of your message.
+We have received your order for {{ $payment->order->product->name }}.
 
-@component('mail::button', ['url' => ''])
-Button Text
-@endcomponent
+Please wait for 6-8 hours for verification.
+
+Order number: {{ $payment->order->order_number }}
 
 Thanks,<br>
-{{ config('app.name') }}
+Sinulog Fyre Team
 @endcomponent

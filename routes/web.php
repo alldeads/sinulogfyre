@@ -25,3 +25,4 @@ Route::get('/beginners_guide', 'HomeController@beginners')->name('beg');
 
 Route::get('/{token}/tickets', 'HomeController@products')->name('products');
 Route::get('/{token}/ticket/{product}', 'HomeController@get_product');
+Route::post('/{token}/ticket/{product}', 'HomeController@get_product');

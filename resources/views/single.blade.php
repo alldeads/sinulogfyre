@@ -95,6 +95,7 @@
                 @csrf
                 <input type="hidden" id="product_price" name="product_price" value="{{ $product->price }}">
                 <input type="hidden" id="product_quantity" name="product_quantity" value="1">
+                <input type="hidden" id="product_id" name="product_id" value="{{ $product->id }}">
 
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
@@ -189,7 +190,7 @@
 
                         <div class="form-group row">
                             <div class="col-md-12">
-                                <input id="reference_code_product" type="text" class="form-control{{ $errors->has('reference_code') ? ' is-invalid' : '' }}" name="reference_code" placeholder="Transaction Number/Code">
+                                <input id="reference_code" type="text" class="form-control{{ $errors->has('reference_code') ? ' is-invalid' : '' }}" name="reference_code" placeholder="Transaction Number/Code">
 
                                 @if ($errors->has('reference_code'))
                                     <span class="invalid-feedback" role="alert">

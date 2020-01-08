@@ -11,14 +11,16 @@ class NewOrder extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $payment;
+
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct( $payment )
     {
-        //migulelufernan@yahoo.com
+        $this->payment = $payment;
     }
 
     /**
@@ -29,7 +31,7 @@ class NewOrder extends Mailable
     public function build()
     {
         return $this->subject('Sinulog Fyre Order Processing')
-                    ->from('admin@sinulogfyre.com')
-                ->markdown('emails.order');
+                    ->from('admin@sinulogfyre.com', 'Sinulog Fyre')
+                    ->markdown('emails.order');
     }
 }
