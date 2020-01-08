@@ -41,4 +41,16 @@ class User extends Authenticatable
     {
         return $this->belongsTo( User::class, 'referral_id' );
     }
+
+    public static function verify_token( $token )
+    {
+        $result = User::where('token', $token)->get();
+
+        if ( count( $result->toArray() ) == 0 ) {
+
+            return false;
+        }
+
+        return true;
+    }
 }

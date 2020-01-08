@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Product;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -22,6 +23,12 @@ class HomeController extends Controller
         $products = Product::all();
 
         $token = request()->token;
+
+        $user = User::verify_token( $token );
+
+        if ( $user === false ) {
+            return redirect('/');
+        }
 
         return view('products', compact('products', 'token'));
     }
