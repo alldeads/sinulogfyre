@@ -45,7 +45,7 @@
                                                         </td>
                                                         <td valign="right" width="50%" class="top-w3l-social-right sub-gd" style="padding-left:0;">
                                                             <div class="top-w3l-social">
-                                                                <a href="#" class="icon-top"><img src="images/fb.png"
+                                                                <a href="https://www.facebook.com/Sinulog-Fyre-102740081257101/" target="_blank" class="icon-top"><img src="images/fb.png"
                                                                         class="img-responsive"></a>
                                                                 <a href="/login" class="icon-top"><img src="images/login.png"
                                                                         width="30"></a>
@@ -144,18 +144,15 @@
                                                                         <td class="email-w3l-section gd-sub-inf"
                                                                             style="text-align: left; padding-left:25px;">
                                                                             <div class="heading-section">
-                                                                                <h4>Happy Holiday</h4>
+                                                                                <h4>SINULOG FYRE</h4>
 
                                                                                 <p class="para"
                                                                                     style="margin:10px 0 20px 0;">
-                                                                                    Integer pulvinar leo id viverra
-                                                                                    feugiat. Pellen tesque libero ut
-                                                                                    justo, ultrices
-                                                                                    in ligula proident suscipit.
+                                                                                    Making the rounds on social media being Sinulog's greatest party that will happen! We're an outdoor event featuring International DJs, World Class Artists, Fireworks, and Firedancers.
                                                                                 </p>
                                                                                 <div class="ream-more-button"
                                                                                     style="display:inline-block">
-                                                                                    <a href="#" class="read-more btn"
+                                                                                    <a href="/5e1651b19312c/tickets" class="read-more btn"
                                                                                         style="color:#fff;text-decoration:none;font-weight:600;display:inline-block;padding:10px 20px;font-size: 16px;border-radius:6px;background:#be366b;border:2px solid#be366b;text-transform:capitalize;">
                                                                                         Buy Ticket
                                                                                     </a>
@@ -171,7 +168,7 @@
                                                             <td valign="right" width="50%" class="sub-gd">
                                                               
                                                                 <img class="img-responsive"
-                                                                src="images/1.jpg" alt=""
+                                                                src="images/fyre.png" alt=""
                                                                 style="height: auto; margin:0 auto 0em;display:block;width:100%">
 
                                                             </td>
@@ -187,73 +184,8 @@
                                 <!--end grid -->
                             </table>
                             <!--//section2-->
-                            <!--/section3-->
-                            <table border="0" width="100%" cellpadding="0" cellspacing="0"
-                                style="background-color: #1e1e1f;">
-                                <tr>
-                                    <td width="100%" align="center" valign="top">
-                                        <table align="center" class="email-container" role="presentation"
-                                            cellspacing="0" cellpadding="0" border="0" width="650px"
-                                            style="margin:0 auto;">
-                                            <!--start grid -->
-                                            <tr>
-                                                <td class="bg_white sub-gd" style="width:100%;">
-                                                    <table role="presentation" class="" border="0" cellpadding="0"
-                                                    cellspacing="0" width="100%">
-
-                                                        <tr>
-                                                            <td valign="left" width="50%" class="sub-gd">
-                                                              
-                                                                <img class="img-responsive"
-                                                                src="images/2.jpg" alt=""
-                                                                style="height: auto; margin:0 auto 0em;display:block;width:100%">
-
-                                                            </td>
-                                                            <td valign="right" width="50%" class="sub-gd">
-                                                                <table role="presentation" cellspacing="0"
-                                                                    cellpadding="0" border="0" width="100%">
-                                                                    <tr>
-                                                                        <td class="email-w3l-section gd-sub-inf sub-gd"
-                                                                            style="text-align: left; padding-left:25px;">
-                                                                            <div class="heading-section">
-                                                                                <h4>New Year Celebration </h4>
-
-                                                                                <p class="para"
-                                                                                    style="margin:10px 0 20px 0;">
-                                                                                    Integer pulvinar leo id viverra
-                                                                                    feugiat. Pellen tesque libero ut
-                                                                                    justo, ultrices
-                                                                                    in ligula proident suscipit.
-                                                                                </p>
-                                                                                <div class="ream-more-button"
-                                                                                    style="display:inline-block">
-                                                                                    <a href="#" class="read-more btn"
-                                                                                        style="color:#fff;text-decoration:none;font-weight:600;display:inline-block;padding:10px 20px;font-size: 16px;border-radius:6px;background:#be366b;border:2px solid#be366b;text-transform:capitalize;">
-                                                                                        Buy Ticket
-                                                                                    </a>
-                                                                                </div>
-                                                                            </div>
-
-
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>
-                                                            </td>
-
-
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                            <!--end grid -->
-                                        </table>
-                                        <!-- end banner -->
-                                    </td>
-                                </tr>
-                                <!--end grid -->
-                            </table>
-                            <!--//section3-->
-                            <table border="0" width="100%" cellpadding="0" cellspacing="0"
+                            
+                            {{-- <table border="0" width="100%" cellpadding="0" cellspacing="0"
                                 style="background-color:#1e1e1f;">
                                 <tr>
                                     <td width="100%" align="center" valign="top">
@@ -287,7 +219,7 @@
                                                                                 feugiat. Semper at tempufddfel</p>
                                                                             <div class="ream-more-button"
                                                                                 style="display:inline-block">
-                                                                                <a href="#" class="read-more btn"
+                                                                                <a href="/5e1651b19312c/tickets" class="read-more btn"
                                                                                     style="color:#fff;text-decoration:none;font-weight:600;display:inline-block;padding:10px 20px;font-size: 16px;border-radius:6px;background:#be366b;border:2px solid#be366b;text-transform:capitalize;">
                                                                                     Buy Ticket
                                                                                 </a>
@@ -308,7 +240,7 @@
                                     </td>
                                 </tr>
                                 <!--end grid -->
-                            </table>
+                            </table> --}}
                             <!--//banner-bottom-->
                             <table border="0" width="100%" cellpadding="0" cellspacing="0"
                                 style="background-color:#1e1e1f;">
@@ -324,7 +256,7 @@
                                                     <!--/grid1-->
                                                     <h3 class="w3l-title"
                                                         style="margin-bottom:30px;text-align:center;font-size:30px;">
-                                                        Party Events
+                                                        Special Guests
                                                     </h3>
                                                     <table role="presentation" class="" border="0" cellpadding="0"
                                                         cellspacing="0" width="100%">
@@ -335,7 +267,7 @@
                                                                     <tr>
                                                                         <td class="events-bottom">
                                                                             <img class="img-responsive"
-                                                                                src="images/3.jpg" alt=""
+                                                                                src="images/deniz.jpg" alt=""
                                                                                 style="height: auto; margin:0 auto 0em;display:block;width:100%">
                                                                         </td>
                                                                     </tr>
@@ -350,15 +282,12 @@
                                                                             <div class="heading-section">
                                                                                 <h6 class="date-email"
                                                                                     style="color:#be366b;font-size:13px;letter-spacing:1px;">
-                                                                                    31.Dec.2019</h6>
-                                                                                <h4>Live Music Concert
+                                                                                    18.Jan.2020</h6>
+                                                                                <h4>Deniz Koyu
                                                                                 </h4>
                                                                                 <p class="para"
                                                                                     style="margin:10px 0 20px 0;">
-                                                                                    Integer pulvinar leo id viverra
-                                                                                    feugiat. Pellen tesque libero ut
-                                                                                    justo, ultrices
-                                                                                    in ligula proident suscipit.
+                                                                                    Deniz Koyu is a Turkish/German DJ and electronic dance music producer. Considered part of the Top 100 DJs of the world he has received worldwide support from artists such as Avicii, Swedish House Mafia, Tiësto, Dada Life and Fedde le Grand and was named an EDM artist to watch by MTV.
                                                                                 </p>
 
                                                                             </div>
@@ -384,7 +313,7 @@
                                                                     <tr>
                                                                         <td class="events-bottom">
                                                                             <img class="img-responsive"
-                                                                                src="images/4.jpg" alt=""
+                                                                                src="images/tiara.jpg" alt=""
                                                                                 style="height: auto; margin:0 auto 0em;display:block;width:100%">
                                                                         </td>
                                                                     </tr>
@@ -399,16 +328,13 @@
                                                                             <div class="heading-section">
                                                                                 <h6 class="date-email"
                                                                                     style="color:#be366b;font-size:13px;letter-spacing:1px;">
-                                                                                    31.Dec.2019</h6>
+                                                                                    18.Jan.2020</h6>
                                                                                 <h4>
-                                                                                    Music & Arts
+                                                                                    Tiara Typinski
                                                                                 </h4>
                                                                                 <p class="para"
                                                                                     style="margin:10px 0 20px 0;">
-                                                                                    Integer pulvinar leo id viverra
-                                                                                    feugiat. Pellen tesque libero ut
-                                                                                    justo, ultrices
-                                                                                    in ligula proident suscipit.
+                                                                                    Hailing from Japan she is perhaps Asia's #1 rising Star Female DJ! Considered one of the Top 3 Asia's sexiest DJs, she continues to make appearances & photos with Tiesto, Afrojack, NAS, Kidink, Kehlani, DJsnake.
                                                                                 </p>
 
                                                                             </div>
@@ -434,7 +360,7 @@
                                                                     <tr>
                                                                         <td class="events-bottom">
                                                                             <img class="img-responsive"
-                                                                                src="images/5.jpg" alt=""
+                                                                                src="images/shanti.jpg" alt=""
                                                                                 style="height: auto; margin:0 auto 0em;display:block;width:100%">
                                                                         </td>
                                                                     </tr>
@@ -449,15 +375,12 @@
                                                                             <div class="heading-section">
                                                                                 <h6 class="date-email"
                                                                                     style="color:#be366b;font-size:13px;letter-spacing:1px;">
-                                                                                    31.Dec.2019</h6>
-                                                                                <h4>Food & Drinks
+                                                                                    18.Jan.2020</h6>
+                                                                                <h4>Shantidope
                                                                                 </h4>
                                                                                 <p class="para"
                                                                                     style="margin:10px 0 20px 0;">
-                                                                                    Integer pulvinar leo id viverra
-                                                                                    feugiat. Pellen tesque libero ut
-                                                                                    justo, ultrices
-                                                                                    in ligula proident suscipit.
+                                                                                    One of the Philippine's top rapper known for songs "Nadarang", "Shantidope", "MAU", and "Amatz". Wherever he goes, he undoubtedly packs a big crowd!
                                                                                 </p>
 
                                                                             </div>
@@ -513,14 +436,10 @@
                                                                             </h3>
                                                                             <p class="para-bottom"
                                                                                 style="font-size:14px;margin:8px 0 20px 0;text-align:left;color:#fff;">
-                                                                                Pellen tesque libero ut
-                                                                                justo, ultrices in ligula.Integer
-                                                                                pulvinar leo id
-                                                                                viverra
-                                                                                feugiat. Semper at tempufddfel</p>
+                                                                                Making the rounds on social media being Sinulog's greatest party that will happen! We're an outdoor event featuring International DJs, World Class Artists, Fireworks, and Firedancers.</p>
                                                                             <div class="ream-more-button"
                                                                                 style="display:inline-block">
-                                                                                <a href="#" class="read-more btn"
+                                                                                <a href="/5e1651b19312c/tickets" class="read-more btn"
                                                                                     style="color:#fff;text-decoration:none;font-weight:600;display:inline-block;padding:10px 20px;font-size: 16px;border-radius:6px;background:#be366b;border:2px solid#be366b;text-transform:capitalize;">
                                                                                     Buy Ticket
                                                                                 </a>
@@ -552,91 +471,6 @@
                                             <!-- start banner -->
                                             <tr>
                                                 <td valign="middle" class="bg_light footer-bottom">
-                                                    <table align="center" class="social-icons-table email-container"
-                                                        role="presentation" cellspacing="0" border="0" style="">
-
-                                                        <tbody>
-                                                            <tr>
-
-
-                                                                <td valign="top" width="25%" class="footer-gd">
-                                                                    <table role="presentation" cellspacing="0"
-                                                                        cellpadding="0" border="0" width="100%">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td valign="top" width="33%"
-                                                                                    class="sub-gd">
-
-
-                                                                                    <a href="#facebook"
-                                                                                        class="icon-social"><img
-                                                                                            src="images/fb.png"
-                                                                                            class="img-responsive"></a>
-                                                                                </td>
-
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </td>
-                                                                <td valign="top" width="25%" class="footer-gd">
-                                                                    <table role="presentation" cellspacing="0"
-                                                                        cellpadding="0" border="0" width="100%">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td valign="top" width="33%"
-                                                                                    class="sub-gd">
-
-
-                                                                                    <a href="#twitter"
-                                                                                        class="icon-social"><img
-                                                                                            src="images/tw.png"
-                                                                                            class="img-responsive"></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </td>
-                                                                <td valign="top" width="25%" class="footer-gd">
-                                                                    <table role="presentation" cellspacing="0"
-                                                                        cellpadding="0" border="0" width="100%">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td valign="top" width="33%"
-                                                                                    class="sub-gd">
-
-
-                                                                                    <a href="#pinterest"
-                                                                                        class="icon-social"><img
-                                                                                            src="images/drib.png"
-                                                                                            class="img-responsive"></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </td>
-                                                                <td valign="top" width="25%" class="footer-gd">
-                                                                    <table role="presentation" cellspacing="0"
-                                                                        cellpadding="0" border="0" width="100%">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td valign="top" width="33%"
-                                                                                    class="sub-gd">
-
-
-                                                                                    <a href="#pinterest"
-                                                                                        class="icon-social"><img
-                                                                                            src="images/pin.png"
-                                                                                            class="img-responsive"></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </td>
-
-                                                            </tr>
-
-                                                        </tbody>
-                                                    </table>
 
                                                     <table role="presentation" class="section-copyright" cellspacing="0"
                                                         cellpadding="0" border="0" width="100%">
