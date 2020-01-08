@@ -66,8 +66,8 @@ return [
 
         'admin' => [ 
             'driver' => 'local', 
-            'root' => public_path('images'), 
-            'url' => env('APP_URL').'/images',
+            'root' => public_path('products'), 
+            'url' => env('APP_URL').'/products',
             'visibility' => 'public',
         ],
 

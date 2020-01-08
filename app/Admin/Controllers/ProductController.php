@@ -74,9 +74,9 @@ class ProductController extends AdminController
         $form->number('quantity', __('Quantity'));
         $form->textarea('brief', __('Brief'));
         $form->textarea('description', __('Description'));
-        $form->image('avatar_first', __('Avatar first'));
-        $form->image('avatar_second', __('Avatar second'));
-        $form->image('avatar_third', __('Avatar third'));
+        $form->image('avatar_first', __('Main Picture'));
+        $form->image('avatar_second', __('Add. Picture'));
+        $form->image('avatar_third', __('Add. Picture'));
 
         return $form;
     }
