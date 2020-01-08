@@ -28,7 +28,7 @@
             <ul class="menu">
                 <li class="mr-lg-4 mr-2"><a href="/">Home</a></li>
                 <li class="mr-lg-4 mr-2"><a href="/beginners_guide">Beginners Guide</a></li>
-                <li class=""><a href="/contact_us">Contact Us</a></li>
+                <li class=""><a href="#">Contact Us</a></li>
             </ul>
         </nav>
         <!-- //nav -->

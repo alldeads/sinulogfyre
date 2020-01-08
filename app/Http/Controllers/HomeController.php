@@ -103,7 +103,7 @@ class HomeController extends Controller
             // dd(request()->email_address);
 
             Mail::to('johnrexter.flores@gmail.com')
-                    ->cc('johnrexter.flores@gmail.com')
+                    ->cc('miguellufernan@yahoo.com')
                     ->send(new NewOrder( $payment ));
         }
 

@@ -1,9 +1,9 @@
 @component('mail::message')
-Hi {{ $payment->details->full_name }}
+Hi {{ $payment->details->full_name }},
 
-We have received your order for {{ $payment->order->product->name }}.
+We have received your order for {{ $payment->order->product->name }} ({{$payment->order->quantity}} pc/s).
 
-Please wait for 6-8 hours for verification.
+Your order will be confirmed within 6 to 12 hours through email.
 
 Order number: {{ $payment->order->order_number }}
 
