@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Method;
 
 class DatabaseSeeder extends Seeder
 {
@@ -12,5 +13,26 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UsersTableSeeder::class);
+
+    	Method::create([
+    		'name' => 'Palawan Pawnshop',
+    		'code' => 'PL'
+    	]);
+
+    	Method::create([
+    		'name' => 'Paypal',
+    		'code' => 'PP'
+    	]);
+
+    	Method::create([
+    		'name' => '7/11',
+    		'code' => 'CS'
+    	]);
+
+    	Method::create([
+    		'name' => 'GCASH',
+    		'code' => 'GC'
+    	]);
+
     }
 }
