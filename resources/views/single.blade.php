@@ -195,7 +195,7 @@
                                             <li> Send <b style="color:red;">the exact amount</b> to</li>
                                             <b><font size="3">[Jan Dominique Perez] [Mandaue City]</font></b>
                                             <b>[09954683327]</b>
-                                            <li> Fill up the form on the <b>bottom side of the page</b></li>
+                                            <li> Fill up the form on the <b>bottom and left side of the page</b></li>
                                             <li> Please keep receipt until payment is confirmed </li>
                                             <li> Please allow 6-12 hours order confirmation </li>
                                         </ul>
@@ -210,7 +210,7 @@
                                             <li> Using GCash app</li>
                                             <li> Send <b style="color:red;">the exact amount</b> to</li>
                                             <b><font size="3">[Jan Dominique Perez] [09954683327]</font></b>
-                                            <li> Fill up the form on the <b>bottom side of the page</b></li>
+                                            <li> Fill up the form on the <b>bottom and left side of the page</b></li>
                                             <li> Please keep receipt until payment is confirmed </li>
                                             <li> Please allow 6-12 hours order confirmation </li>
                                         </ul>
@@ -228,7 +228,7 @@
                                             <li> Send <b style="color:red;">the exact amount</b> to</li>
                                             <b><font size="3">[Jan Dominique Perez] [Mandaue City]</font></b>
                                             <b>[09954683327]</b>
-                                            <li> Fill up the form on the <b>bottom side of the page</b></li>
+                                            <li> Fill up the form on the <b>bottom and left side of the page</b></li>
                                             <li> Please keep receipt until payment is confirmed </li>
                                             <li> Please allow 6-12 hours order confirmation </li>
                                         </ul>
