@@ -190,15 +190,15 @@
                             <div class="col-md-12" id="palawan" style="margin-top: 10px;display: block; ">
                                 <div class="panel">
                                     <div class="panel-heading" style="text-align: left;">
-                                        <ul>
-                                            <li> Go to the nearest Palawan Pawnshop</li>
-                                            <li> Send <b style="color:red;">the exact amount</b> to</li>
+                                        <ol type="1">
+                                            <li>1. Go to the nearest Palawan Pawnshop</li>
+                                            <li>2. Send <b style="color:red;">the exact amount</b> to</li>
                                             <b><font size="3">[Jan Dominique Perez] [Mandaue City]</font></b>
                                             <b>[09954683327]</b>
-                                            <li> Fill up the form on the <b>bottom and left side of the page</b></li>
-                                            <li> Please keep receipt until payment is confirmed </li>
-                                            <li> Please allow 6-12 hours order confirmation </li>
-                                        </ul>
+                                            <li>3. Fill up the form on the <b>bottom and left side of the page</b></li>
+                                            <li>4. Please keep receipt until payment is confirmed </li>
+                                            <li>5. Please allow 6-12 hours order confirmation </li>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
@@ -206,14 +206,14 @@
                             <div class="col-md-12" id="gcash" style="margin-top: 10px; display: none; ">
                                 <div class="panel">
                                     <div class="panel-heading" style="text-align: left;">
-                                        <ul>
-                                            <li> Using GCash app</li>
-                                            <li> Send <b style="color:red;">the exact amount</b> to</li>
+                                        <ol>
+                                            <li>1. Using GCash app</li>
+                                            <li>2. Send <b style="color:red;">the exact amount</b> to</li>
                                             <b><font size="3">[Jan Dominique Perez] [09954683327]</font></b>
-                                            <li> Fill up the form on the <b>bottom and left side of the page</b></li>
-                                            <li> Please keep receipt until payment is confirmed </li>
-                                            <li> Please allow 6-12 hours order confirmation </li>
-                                        </ul>
+                                            <li>3. Fill up the form on the <b>bottom and left side of the page</b></li>
+                                            <li>4. Please keep receipt until payment is confirmed </li>
+                                            <li>5. Please allow 6-12 hours order confirmation </li>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
@@ -221,17 +221,17 @@
                             <div class="col-md-12" id="seven" style="margin-top: 10px; display: none; ">
                                 <div class="panel">
                                     <div class="panel-heading" style="text-align: left;">
-                                        <ul>
-                                            <li> Visit to any 7/11 </li>
-                                            <li> Go to Cashier</li>
-                                            <li> Ask to Send Money Via Palawan</li>
-                                            <li> Send <b style="color:red;">the exact amount</b> to</li>
+                                        <ol>
+                                            <li>1. Visit to any 7/11 </li>
+                                            <li>2. Go to Cashier</li>
+                                            <li>3. Ask to Send Money Via Palawan</li>
+                                            <li>4. Send <b style="color:red;">the exact amount</b> to</li>
                                             <b><font size="3">[Jan Dominique Perez] [Mandaue City]</font></b>
                                             <b>[09954683327]</b>
-                                            <li> Fill up the form on the <b>bottom and left side of the page</b></li>
-                                            <li> Please keep receipt until payment is confirmed </li>
-                                            <li> Please allow 6-12 hours order confirmation </li>
-                                        </ul>
+                                            <li>5. Fill up the form on the <b>bottom and left side of the page</b></li>
+                                            <li>6. Please keep receipt until payment is confirmed </li>
+                                            <li>7. Please allow 6-12 hours order confirmation </li>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
