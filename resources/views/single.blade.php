@@ -103,67 +103,6 @@
                             <div class="col-md-12">
                                 <div class="panel">
                                     <div class="panel-heading" style="text-align: left;">
-                                        <h6> Billing Information</h6>
-                                        <hr>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-12">
-                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" required autofocus placeholder="Sender Full Name">
-
-                                @if ($errors->has('name'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-12">
-                                <input id="address" type="text" class="form-control{{ $errors->has('address') ? ' is-invalid' : '' }}" name="address" required autofocus placeholder="Sender Address">
-
-                                @if ($errors->has('address'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('address') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-12">
-                                <input id="email_address" type="text" class="form-control{{ $errors->has('email_address') ? ' is-invalid' : '' }}" name="email_address" required autofocus placeholder="Email Address">
-
-                                @if ($errors->has('email_address'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('email_address') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-12">
-                                <input id="phone" type="text" class="form-control{{ $errors->has('phone') ? ' is-invalid' : '' }}" name="phone" autofocus placeholder="Sender Phone Number">
-
-                                @if ($errors->has('phone'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('phone') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                        <div class="form-group row">
-                            <div class="col-md-12">
-                                <div class="panel">
-                                    <div class="panel-heading" style="text-align: left;">
                                         <h6> Payment Options </h6>
                                         <hr>
                                     </div>
@@ -176,7 +115,9 @@
                                 <select id="payment_method" name="method" class="form-control{{ $errors->has('method') ? ' is-invalid' : '' }}">
                                     
                                     @foreach( $options as $option )
-                                        <option value="{{ $option->id }}"> {{ $option->name }}</option>
+                                        @if ( $option->id != 2 )
+                                            <option value="{{ $option->id }}"> {{ $option->name }}</option>
+                                        @endif
                                     @endforeach
                                 </select>
 
@@ -260,6 +201,66 @@
                                 @endif
                             </div>
                         </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <div class="panel">
+                                    <div class="panel-heading" style="text-align: left;">
+                                        <h6> Billing Information</h6>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" required autofocus placeholder="Sender Full Name">
+
+                                @if ($errors->has('name'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('name') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <input id="address" type="text" class="form-control{{ $errors->has('address') ? ' is-invalid' : '' }}" name="address" required autofocus placeholder="Sender Address">
+
+                                @if ($errors->has('address'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('address') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <input id="email_address" type="text" class="form-control{{ $errors->has('email_address') ? ' is-invalid' : '' }}" name="email_address" required autofocus placeholder="Email Address">
+
+                                @if ($errors->has('email_address'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('email_address') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <input id="phone" type="text" class="form-control{{ $errors->has('phone') ? ' is-invalid' : '' }}" name="phone" autofocus placeholder="Sender Phone Number">
+
+                                @if ($errors->has('phone'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('phone') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
 
                         <div class="form-group row">
                             <div class="col-md-12">
@@ -267,9 +268,7 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-                
             </form>
         </div>
     </section>
