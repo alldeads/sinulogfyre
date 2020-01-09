@@ -5,7 +5,7 @@ $( function () {
         'init' : function () {
 
             this.add_product_quantity();
-            this.cash_on_delivery();
+            this.method_information();
         },
 
         'add_product_quantity' : function () {
@@ -31,27 +31,23 @@ $( function () {
             } );
         },
 
-        'cash_on_delivery' : function () {
-            $("#remittance_center_product").on( 'change', function () {
+        'method_information' : function () {
+            $("#payment_method").on( 'change', function () {
 
                 var x = $(this).val();
 
-                if ( x == 4 ) {
-                    $("#reference_code_product").hide();
-                    $("#date_paid_product").hide();
-                    $("#s_phone_product").hide();
-                    $("#sender_name_product").hide();
-                    $("#button_product_2").hide();
-                    $("#button_product_1").show();
-                    $("#s_phone_product").hide();
-                } else {
-                    $("#reference_code_product").show();
-                    $("#date_paid_product").show();
-                    $("#s_phone_product").show();
-                    $("#sender_name_product").show();
-                    $("#button_product_1").hide();
-                    $("#button_product_2").show();
-                    $("#s_phone_product").show();
+                if ( x == 1 ) {
+                    $("#palawan").show();
+                    $("#seven").hide();
+                    $("#gcash").hide();
+                } else if ( x == 3 ) {
+                    $("#palawan").hide();
+                    $("#seven").show();
+                    $("#gcash").hide();
+                } else if ( x == 4 ) {
+                    $("#palawan").hide();
+                    $("#seven").hide();
+                    $("#gcash").show();
                 }
             } );
         }

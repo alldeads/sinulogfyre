@@ -112,7 +112,7 @@
 
                         <div class="form-group row">
                             <div class="col-md-12">
-                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" required autofocus placeholder="Full Name">
+                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" required autofocus placeholder="Sender Full Name">
 
                                 @if ($errors->has('name'))
                                     <span class="invalid-feedback" role="alert">
@@ -124,7 +124,7 @@
 
                         <div class="form-group row">
                             <div class="col-md-12">
-                                <input id="address" type="text" class="form-control{{ $errors->has('address') ? ' is-invalid' : '' }}" name="address" required autofocus placeholder="Address">
+                                <input id="address" type="text" class="form-control{{ $errors->has('address') ? ' is-invalid' : '' }}" name="address" required autofocus placeholder="Sender Address">
 
                                 @if ($errors->has('address'))
                                     <span class="invalid-feedback" role="alert">
@@ -148,7 +148,7 @@
 
                         <div class="form-group row">
                             <div class="col-md-12">
-                                <input id="phone" type="text" class="form-control{{ $errors->has('phone') ? ' is-invalid' : '' }}" name="phone" autofocus placeholder="Phone Number">
+                                <input id="phone" type="text" class="form-control{{ $errors->has('phone') ? ' is-invalid' : '' }}" name="phone" autofocus placeholder="Sender Phone Number">
 
                                 @if ($errors->has('phone'))
                                     <span class="invalid-feedback" role="alert">
@@ -173,7 +173,7 @@
 
                         <div class="form-group row">
                             <div class="col-md-12">
-                                <select name="method" class="form-control{{ $errors->has('method') ? ' is-invalid' : '' }}">
+                                <select id="payment_method" name="method" class="form-control{{ $errors->has('method') ? ' is-invalid' : '' }}">
                                     
                                     @foreach( $options as $option )
                                         <option value="{{ $option->id }}"> {{ $option->name }}</option>
@@ -185,6 +185,55 @@
                                         <strong>{{ $errors->first('method') }}</strong>
                                     </span>
                                 @endif
+                            </div>
+
+                            <div class="col-md-12" id="palawan" style="margin-top: 10px;display: block; ">
+                                <div class="panel">
+                                    <div class="panel-heading" style="text-align: left;">
+                                        <ul>
+                                            <li> Go to the nearest Palawan Pawnshop</li>
+                                            <li> Send <b style="color:red;">the exact amount</b> to</li>
+                                            <b><font size="3">[Jan Dominique Perez] [Mandaue City]</font></b>
+                                            <b>[09954683327]</b>
+                                            <li> Fill up the form on the <b>bottom side of the page</b></li>
+                                            <li> Please keep receipt until payment is confirmed </li>
+                                            <li> Please allow 6-12 hours order confirmation </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12" id="gcash" style="margin-top: 10px; display: none; ">
+                                <div class="panel">
+                                    <div class="panel-heading" style="text-align: left;">
+                                        <ul>
+                                            <li> Using GCash app</li>
+                                            <li> Send <b style="color:red;">the exact amount</b> to</li>
+                                            <b><font size="3">[Jan Dominique Perez] [09954683327]</font></b>
+                                            <li> Fill up the form on the <b>bottom side of the page</b></li>
+                                            <li> Please keep receipt until payment is confirmed </li>
+                                            <li> Please allow 6-12 hours order confirmation </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12" id="seven" style="margin-top: 10px; display: none; ">
+                                <div class="panel">
+                                    <div class="panel-heading" style="text-align: left;">
+                                        <ul>
+                                            <li> Visit to any 7/11 </li>
+                                            <li> Go to Cashier</li>
+                                            <li> Ask to Send Money Via Palawan</li>
+                                            <li> Send <b style="color:red;">the exact amount</b> to</li>
+                                            <b><font size="3">[Jan Dominique Perez] [Mandaue City]</font></b>
+                                            <b>[09954683327]</b>
+                                            <li> Fill up the form on the <b>bottom side of the page</b></li>
+                                            <li> Please keep receipt until payment is confirmed </li>
+                                            <li> Please allow 6-12 hours order confirmation </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
