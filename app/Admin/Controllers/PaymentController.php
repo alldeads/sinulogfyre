@@ -3,6 +3,7 @@
 namespace App\Admin\Controllers;
 
 use App\Payment;
+use App\User;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
@@ -27,13 +28,12 @@ class PaymentController extends AdminController
         $grid = new Grid(new Payment());
 
         $grid->column('id', __('Id'));
-        $grid->column('method_id', __('Method id'));
-        $grid->column('user_id', __('User id'));
-        $grid->column('details_id', __('Details id'));
-        $grid->column('order_id', __('Order id'));
+        $grid->column('order.order_number', __('Order #'));
+        $grid->column('method.name', __('Payment Method'));
+        $grid->column('user.name', __('Referrer'));
+        $grid->column('details.full_name', __('Customer'));
         $grid->column('status', __('Status'));
         $grid->column('created_at', __('Created at'));
-        $grid->column('updated_at', __('Updated at'));
 
         return $grid;
     }
@@ -69,11 +69,39 @@ class PaymentController extends AdminController
     {
         $form = new Form(new Payment());
 
-        $form->number('method_id', __('Method id'));
-        $form->number('user_id', __('User id'));
-        $form->number('details_id', __('Details id'));
-        $form->number('order_id', __('Order id'));
-        $form->text('status', __('Status'));
+        $form->hidden('user.id');
+        $form->hidden('id');
+        $form->display('method.name', __('Payment Method'));
+        $form->display('user.name', __('Referrer'));
+        $form->display('details.reference_code', __('Transaction Code'));
+        $form->display('details.full_name', __('Customer Name'));
+        $form->display('order.order_number', __('Order Number'));
+
+        $form->select('status', __('Status'))->options(['pending' => 'Pending', 'paid' => 'Paid', 'declined' => 'Declined', 'duplicated' => 'Duplicated']);
+
+        $form->saving(function (Form $form) {
+            
+            $status  = $form->status;
+            $user_id = $form->user;
+
+            $payment = Payment::find($form->id);
+
+            $user = User::find($user_id);
+
+            $user = $user[0];
+
+            if ( $payment->status == "paid" ) {
+                $user->directs = $user->directs - 1;
+                $user->save();
+            }
+
+            if ( $payment->status != "paid" ) {
+                if ( $user && $status == "paid" ) {
+                    $user->directs = $user->directs + 1;
+                    $user->save();
+                }
+            }
+        });
 
         return $form;
     }

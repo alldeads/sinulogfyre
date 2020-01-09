@@ -27,7 +27,7 @@ class Payment extends Model
 
     public function method()
     {
-        return $this->hasOne( Method::class );
+        return $this->belongsTo( Method::class );
     }
 
     public function details()
