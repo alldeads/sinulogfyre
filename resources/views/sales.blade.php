@@ -13,22 +13,28 @@
 	            		<thead>
 	            			<tr>
 	            				<td> Order Number</td>
+	            				<td> Ticket</td>
 	            				<td> Amount</td>
 	            				<td> Quantity</td>
+	            				<td> Status</td>
 	            				<td> Date Created</td>
 	            			</tr>
 	            		</thead>
-	            		{{-- <tbody>
-	            			@foreach( $encashments as $encashment )
+	            		<tbody>
+	            			@foreach( $payments as $payment )
 	            				<tr>
-	            					<td> {{ $encashment->remittance_center == "PL" ? "Palawan Pawnshop" : $encashment->remittance_center }}</td>
-	            					<td> {{ $encashment->amount }}</td>
-	            					<td style="color:red;"> {{ ucfirst( $encashment->status ) }}</td>
-	            					<td> {{ $encashment->created_at }}</td>
+	            					<td> {{ $payment->order->order_number }}</td>
+	            					<td> {{ $payment->order->product->name }}</td>
+	            					<td> {{ $payment->order->total_price }}</td>
+	            					<td> {{ $payment->order->quantity }}</td>
+	            					<td style="color:red;"> {{ ucfirst($payment->status)}}</td>
+	            					<td> {{ $payment->created_at }}</td>
 	            				</tr>
 	            			@endforeach
-	            		</tbody> --}}
+	            		</tbody>
 	            	</table>
+
+	            	{{ $payments->links() }}
 	            </div>
 	        </div>
 	    </div>

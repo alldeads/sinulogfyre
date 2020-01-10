@@ -41,26 +41,22 @@
             </div>
             <div class="panel-body">
                 <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <td> Date</td>
+                            <td> Customer</td>
+                            <td> Total</td>
+                        </tr>
+                    </thead>
+
                     <tbody>
-                        <tr>
-                            <td>Membership Date</td>
-                            <td>{{ Auth::user()->created_at }}</td>
-                        </tr>
-
-                        <tr>
-                            <td>Ticket Link</td>
-                            <td>https://sinulogfyre.com/{{ Auth::user()->token }}/tickets</td>
-                        </tr>
-
-                        <tr>
-                            <td>Name:</td>
-                            <td>{{ Auth::user()->name }}</td>
-                        </tr> 
-
-                        <tr>
-                            <td>Email Address:</td>
-                            <td>{{ Auth::user()->email }}</td>
-                        </tr> 
+                        @foreach( $sales_summary as $sales )
+                            <tr>
+                                <td> {{ $sales->created_at }}</td>
+                                <td> {{ $sales->details->full_name }}</td>
+                                <td> {{ $sales->order->total_price }}</td>
+                            </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>

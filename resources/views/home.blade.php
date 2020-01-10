@@ -11,7 +11,7 @@
                             <i class="fa fa-money fa-4x"></i>
                         </div>
                         <div class="col-xs-9 text-right">
-                           <h2>0</h2>
+                            <h2>{{ $available_cash }}</h2>
                             <div>Available Cash</div>
                         </div>
                     </div>
@@ -27,7 +27,7 @@
                             <i class="fa fa-money fa-4x"></i>
                         </div>
                         <div class="col-xs-9 text-right">
-                            <h2>0</h2>
+                            <h2>{{ $pending_cash }}</h2>
                             <div>Pending Cash</div>
                         </div>
                     </div>

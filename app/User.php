@@ -42,6 +42,11 @@ class User extends Authenticatable
         return $this->belongsTo( User::class, 'referral_id' );
     }
 
+    public function payments()
+    {
+        return $this->hasMany( Payment::class );
+    }
+
     public static function verify_token( $token )
     {
         $result = User::where('token', $token)->get();
