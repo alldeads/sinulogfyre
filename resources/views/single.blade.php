@@ -91,13 +91,36 @@
                 </div>
             </div>
 
+            <div class="row" id="paypal" style="display: none;">
+
+                @if ( $product->id == 1 ) 
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12" id="vipticket">
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="5932FLFLEBFW4">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                    </div>
+                @else
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12" id="genadticket">
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="79HE4P3N9BUY8">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                    </div>
+                @endif
+            </div>
+
             <form method="POST">
                 @csrf
                 <input type="hidden" id="product_price" name="product_price" value="{{ $product->price }}">
                 <input type="hidden" id="product_quantity" name="product_quantity" value="1">
                 <input type="hidden" id="product_id" name="product_id" value="{{ $product->id }}">
 
-                <div class="row">
+                <div class="row" id="normal">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="form-group row">
                             <div class="col-md-12">
@@ -115,9 +138,7 @@
                                 <select id="payment_method" name="method" class="form-control{{ $errors->has('method') ? ' is-invalid' : '' }}">
                                     
                                     @foreach( $options as $option )
-                                        @if ( $option->id != 2 )
-                                            <option value="{{ $option->id }}"> {{ $option->name }}</option>
-                                        @endif
+                                        <option value="{{ $option->id }}"> {{ $option->name }}</option>
                                     @endforeach
                                 </select>
 
@@ -128,15 +149,16 @@
                                 @endif
                             </div>
 
-                            <div class="col-md-12" id="palawan" style="margin-top: 10px;display: block; ">
+                            <div class="col-md-12" id="palawan" style="margin-top: 10px;display: none; ">
                                 <div class="panel">
                                     <div class="panel-heading" style="text-align: left;">
                                         <ol type="1">
                                             <li>1. Go to the nearest Palawan Pawnshop</li>
                                             <li>2. Send <b style="color:red;">the exact amount</b> to</li>
-                                            <b><font size="3">[Jan Dominique Perez] [Mandaue City]</font></b>
-                                            <b>[09954683327]</b>
-                                            <li>3. Fill up the form on the <b>bottom and left side of the page</b></li>
+                                            <p><font size="3">[<b style="color: skyblue;">Jan Dominique Perez</b>] </font></p>
+                                            <p><font size="3">[<b style="color: skyblue;">Mandaue City</b>]</font></p>
+                                            <p>[<b style="color: skyblue;">09954683327</b>]</p>
+                                            <li>3. Fill up the form</li>
                                             <li>4. Please keep receipt until payment is confirmed </li>
                                             <li>5. Please allow 6-12 hours order confirmation </li>
                                         </ol>
@@ -144,14 +166,15 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-12" id="gcash" style="margin-top: 10px; display: none; ">
+                            <div class="col-md-12" id="gcash" style="margin-top: 10px; display: block; ">
                                 <div class="panel">
                                     <div class="panel-heading" style="text-align: left;">
                                         <ol>
                                             <li>1. Using GCash app</li>
                                             <li>2. Send <b style="color:red;">the exact amount</b> to</li>
-                                            <b><font size="3">[Jan Dominique Perez] [09954683327]</font></b>
-                                            <li>3. Fill up the form on the <b>bottom and left side of the page</b></li>
+                                            <p><font size="3">[<b style="color: skyblue;">Jan Dominique Perez</b>] </font></p>
+                                            <p>[<b style="color: skyblue;">09954683327</b>]</p>
+                                            <li>3. Fill up the form</li>
                                             <li>4. Please keep receipt until payment is confirmed </li>
                                             <li>5. Please allow 6-12 hours order confirmation </li>
                                         </ol>
@@ -167,9 +190,10 @@
                                             <li>2. Go to Cashier</li>
                                             <li>3. Ask to Send Money Via Palawan</li>
                                             <li>4. Send <b style="color:red;">the exact amount</b> to</li>
-                                            <b><font size="3">[Jan Dominique Perez] [Mandaue City]</font></b>
-                                            <b>[09954683327]</b>
-                                            <li>5. Fill up the form on the <b>bottom and left side of the page</b></li>
+                                            <p><font size="3">[<b style="color: skyblue;">Jan Dominique Perez</b>] </font></p>
+                                            <p><font size="3">[<b style="color: skyblue;">Mandaue City</b>]</font></p>
+                                            <p>[<b style="color: skyblue;">09954683327</b>]</p>
+                                            <li>5. Fill up the form</li>
                                             <li>6. Please keep receipt until payment is confirmed </li>
                                             <li>7. Please allow 6-12 hours order confirmation </li>
                                         </ol>
@@ -190,7 +214,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
+                        {{-- <div class="form-group row">
                             <div class="col-md-12">
                                 <input id="date_paid" type="date" class="form-control{{ $errors->has('date_paid') ? ' is-invalid' : '' }}" name="date_paid" placeholder="Date Paid" >
 
@@ -200,7 +224,7 @@
                                     </span>
                                 @endif
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="form-group row">

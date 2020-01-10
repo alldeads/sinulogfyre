@@ -3,7 +3,7 @@ $( function () {
     var run = {
 
         'init' : function () {
-
+            $("#payment_method").val(4).change();
             this.add_product_quantity();
             this.method_information();
         },
@@ -40,14 +40,23 @@ $( function () {
                     $("#palawan").show();
                     $("#seven").hide();
                     $("#gcash").hide();
+                    $("#paypal").hide();
                 } else if ( x == 3 ) {
                     $("#palawan").hide();
                     $("#seven").show();
                     $("#gcash").hide();
+                    $("#paypal").hide();
                 } else if ( x == 4 ) {
                     $("#palawan").hide();
                     $("#seven").hide();
                     $("#gcash").show();
+                    $("#paypal").hide();
+                } else {
+                    $("#paypal").show();
+                    $("#palawan").hide();
+                    $("#seven").hide();
+                    $("#gcash").hide();
+                    $("#normal").hide();
                 }
             } );
         }

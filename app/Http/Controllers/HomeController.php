@@ -68,7 +68,6 @@ class HomeController extends Controller
                 'phone'            => 'required|numeric',
                 'method'           => 'required',
                 'reference_code'   => 'required',
-                'date_paid'        => 'required',
             ]);
 
             $quantity = request()->product_quantity;
@@ -86,8 +85,7 @@ class HomeController extends Controller
                 'full_name'      => request()->name,
                 'address'        => request()->address,
                 'phone'          => request()->phone,
-                'email'          => request()->email_address,
-                'date_receipt'   => request()->date_paid
+                'email'          => request()->email_address
             ]);
 
             $payment = Payment::create([
