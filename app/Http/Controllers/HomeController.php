@@ -93,14 +93,14 @@ class HomeController extends Controller
                 'user_id'      => $user->id,
                 'details_id'   => $details->id,
                 'order_id'     => $order->id,
-                'status'       => 'pending',
+                'status'       => 'pending'
             ]);
 
             $message = "Your order has been received! Please check your email!";
 
             // dd(request()->email_address);
 
-            // Mail::to(request()->email_address)
+            Mail::to(request()->email_address)
                     ->cc('johnrexter.flores@gmail.com')
                     ->send(new NewOrder( $payment ));
         }
