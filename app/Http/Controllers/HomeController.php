@@ -100,9 +100,9 @@ class HomeController extends Controller
 
             // dd(request()->email_address);
 
-            // Mail::to(request()->email_address)
-            //         ->cc('johnrexter.flores@gmail.com')
-            //         ->send(new NewOrder( $payment ));
+            Mail::to(request()->email_address)
+                    ->cc('johnrexter.flores@gmail.com')
+                    ->queue(new NewOrder( $payment ));
         }
 
         return view('single', compact('product', 'message', 'options'));

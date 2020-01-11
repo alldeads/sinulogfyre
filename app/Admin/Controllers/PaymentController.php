@@ -8,6 +8,8 @@ use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Show;
+use App\Mail\TicketConfirmed;
+use Illuminate\Support\Facades\Mail;
 
 class PaymentController extends AdminController
 {
@@ -94,6 +96,10 @@ class PaymentController extends AdminController
             if ( $payment->status == "paid" ) {
                 $user->directs = $user->directs - 1;
                 $user->save();
+
+                // Mail::to(request()->email_address)
+                //     ->cc('johnrexter.flores@gmail.com')
+                //     ->queue(new TicketConfirmed( $payment ));
             }
 
             if ( $payment->status != "paid" ) {
