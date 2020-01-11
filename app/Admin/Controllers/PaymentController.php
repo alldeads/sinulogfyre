@@ -32,6 +32,7 @@ class PaymentController extends AdminController
         $grid->column('method.name', __('Payment Method'));
         $grid->column('user.name', __('Referrer'));
         $grid->column('details.full_name', __('Customer'));
+        $grid->column('order.total_price', __('Amount'));
         $grid->column('status', __('Status'));
         $grid->column('created_at', __('Created at'));
 
