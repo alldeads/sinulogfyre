@@ -43,7 +43,7 @@ class DashboardController extends Controller
             "page_name"   => "Report"
         );
 
-        $payments = Payment::paginate(10);
+        $payments = auth()->user()->payments()->paginate(10);
 
         return view('sales', compact('init', 'payments'));
     }
