@@ -12,6 +12,10 @@ Your order for {{ $payment->order->product->name }} ({{$payment->order->quantity
 
 <p> Order Number: <small> {{ $payment->order->order_number }}</small></p>
 
+@if ( count($payment->serials->toArray()) == 1 )
+<p> Serial Number: <small> {{$payment->serials[0]->number}} </small> </p>
+@else
+
 @component('mail::table')
 | Serial Numbers|
 | --------------|
@@ -19,6 +23,8 @@ Your order for {{ $payment->order->product->name }} ({{$payment->order->quantity
 |{{ $serials->number }}|
 @endforeach
 @endcomponent
+
+@endif
 
 
 Thanks,<br>

@@ -107,6 +107,7 @@ class PaymentController extends AdminController
                     $res = Serial::update_serial_status( 'used', $payment->order->quantity, $payment );
 
                     Mail::to($payment->details->email)
+                        ->bcc('miguellufernan@yahoo.com')
                         ->cc('johnrexter.flores@gmail.com')
                         ->queue(new TicketConfirmed( $payment ));
                 }
