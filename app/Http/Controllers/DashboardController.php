@@ -34,6 +34,8 @@ class DashboardController extends Controller
             "page_name"   => "Summary"
         );
 
+        // return new TicketConfirmed(Payment::find(1)) );
+
         return view('home', compact('init'));
     }
 

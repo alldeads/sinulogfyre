@@ -20,4 +20,6 @@ Route::group([
 
     $router->resource('payments', PaymentController::class);
 
+    $router->resource('serials', SerialController::class);
+
 });

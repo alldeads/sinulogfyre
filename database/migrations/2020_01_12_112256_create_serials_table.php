@@ -16,6 +16,7 @@ class CreateSerialsTable extends Migration
         Schema::create('serials', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('payment_id')->nullable();
+            $table->integer('product_id')->nullable();
             $table->string('number')->unique();
             $table->enum('status', ['available', 'blocked', 'used', 'duplicated']);
             $table->timestamps();

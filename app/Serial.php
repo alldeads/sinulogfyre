@@ -17,7 +17,12 @@ class Serial extends Model
 
     public function payment()
     {
-        return $this->hasOne( Payment::class );
+        return $this->belongsTo( Payment::class );
+    }
+
+    public function product()
+    {
+        return $this->belongsTo( Product::class );
     }
 
     public static function update_serial_status( $status, $quantity, $payment )
@@ -35,6 +40,7 @@ class Serial extends Model
 
     				$s->status     = $status;
     				$s->payment_id = $payment->id;
+                    $s->product_id = $payment->order->product->id;
     				$s->save();
 
     				$data[] = $s->number;

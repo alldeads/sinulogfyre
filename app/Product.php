@@ -22,4 +22,9 @@ class Product extends Model
     {
         return $this->hasMany( Order::class );
     }
+
+    public function serials()
+    {
+        return $this->hasMany( Serial::class );
+    }
 }

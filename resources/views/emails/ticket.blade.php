@@ -10,10 +10,12 @@ Your order for {{ $payment->order->product->name }} ({{$payment->order->quantity
 @endif
 <br><br>
 
-<p> Order Number: <small> {{ $payment->order->order_number }}</small></p>
+<p> Order Number: <small style="color:red;"> {{ $payment->order->order_number }}</small></p>
+
+<p> Please print or present the Serials below upon entry.</p>
 
 @if ( count($payment->serials->toArray()) == 1 )
-<p> Serial Number: <small> {{$payment->serials[0]->number}} </small> </p>
+<p> Serial Number: <small style="color:red;"> {{$payment->serials[0]->number}} </small> </p>
 @else
 
 @component('mail::table')
@@ -25,6 +27,8 @@ Your order for {{ $payment->order->product->name }} ({{$payment->order->quantity
 @endcomponent
 
 @endif
+
+<p> Have a good day! See you on January 18, 2020.</p>
 
 
 Thanks,<br>

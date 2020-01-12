@@ -71,14 +71,14 @@ class DatabaseSeeder extends Seeder
         ]);
 
 
-        // for ( $i = 1; $i < 4001; $i++ ) {
+        for ( $i = 1; $i < 4001; $i++ ) {
 
-        //     $serial = Serial::generate_serial_number();
+            $serial = Serial::generate_serial_number();
 
-        //     Serial::create([
-        //         'number' => $serial,
-        //         'status' => 'available'
-        //     ]);
-        // }
+            Serial::create([
+                'number' => $serial,
+                'status' => 'available'
+            ]);
+        }
     }
 }
