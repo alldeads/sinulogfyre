@@ -4,6 +4,7 @@ namespace App\Admin\Controllers;
 
 use App\Payment;
 use App\User;
+use App\Serial;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
@@ -96,16 +97,18 @@ class PaymentController extends AdminController
             if ( $payment->status == "paid" ) {
                 $user->directs = $user->directs - 1;
                 $user->save();
-
-                // Mail::to(request()->email_address)
-                //     ->cc('johnrexter.flores@gmail.com')
-                //     ->queue(new TicketConfirmed( $payment ));
             }
 
             if ( $payment->status != "paid" ) {
                 if ( $user && $status == "paid" ) {
                     $user->directs = $user->directs + 1;
                     $user->save();
+
+                    $res = Serial::update_serial_status( 'used', $payment->order->quantity, $payment );
+
+                    Mail::to($payment->details->email)
+                        ->cc('johnrexter.flores@gmail.com')
+                        ->queue(new TicketConfirmed( $payment ));
                 }
             }
         });

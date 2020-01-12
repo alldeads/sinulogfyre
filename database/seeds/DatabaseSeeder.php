@@ -4,6 +4,7 @@ use Illuminate\Database\Seeder;
 use App\Method;
 use App\User;
 use App\Product;
+use App\Serial;
 use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
@@ -69,5 +70,15 @@ class DatabaseSeeder extends Seeder
             'avatar_first' => 'images/81327007_607665803322647_1180082083217801216_n.jpg'
         ]);
 
+
+        // for ( $i = 1; $i < 4001; $i++ ) {
+
+        //     $serial = Serial::generate_serial_number();
+
+        //     Serial::create([
+        //         'number' => $serial,
+        //         'status' => 'available'
+        //     ]);
+        // }
     }
 }

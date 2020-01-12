@@ -11,7 +11,7 @@ class TicketConfirmed extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $data;
+    public $payment;
 
     /**
      * Create a new message instance.
@@ -20,7 +20,7 @@ class TicketConfirmed extends Mailable
      */
     public function __construct( $data )
     {
-        $this->data = $data;
+        $this->payment = $data;
     }
 
     /**
@@ -30,6 +30,7 @@ class TicketConfirmed extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.ticket');
+        return $this->subject('Sinulog Fyre Order Confirmed')
+                    ->markdown('emails.ticket');
     }
 }

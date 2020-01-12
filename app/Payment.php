@@ -84,4 +84,9 @@ class Payment extends Model
     {
         return $this->belongsTo( Details::class );
     }
+
+    public function serials()
+    {
+        return $this->hasMany( Serial::class );
+    }
 }

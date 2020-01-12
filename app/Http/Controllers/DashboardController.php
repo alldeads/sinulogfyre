@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Carbon\Carbon;
 use App\User;
 use App\Payment;
+use App\Mail\TicketConfirmed;
+use Illuminate\Support\Facades\Mail;
 
 class DashboardController extends Controller
 {
