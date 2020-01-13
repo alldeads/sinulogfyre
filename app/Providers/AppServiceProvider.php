@@ -31,7 +31,7 @@ class AppServiceProvider extends ServiceProvider
 
             $view->with('available_cash', \App\Payment::availableCash());
             $view->with('pending_cash', \App\Payment::pendingCash());
-            $view->with('sales_summary', auth()->user()->payments()->take(5)->orderBy('created_at', 'desc')->get());
+            $view->with('sales_summary', \App\Payment::take(5)->orderBy('created_at', 'desc')->get());
         } );
     }
 }
