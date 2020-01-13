@@ -514,7 +514,7 @@
                     <!-- end tr -->
                 </table>
 
-                <script>
+                {{-- <script>
   var div = document.createElement('div');
   div.className = 'fb-customerchat';
   div.setAttribute('page_id', '102740081257101');
@@ -544,7 +544,7 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   }, 0);
-</script>
+</script> --}}
 </body>
 
 </html>
