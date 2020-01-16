@@ -70,15 +70,65 @@ class DatabaseSeeder extends Seeder
             'avatar_first' => 'images/81327007_607665803322647_1180082083217801216_n.jpg'
         ]);
 
+        Product::create([
+            'name'     => 'Ground Floor Tables',
+            'price'    => 30000,
+            'quantity' => 5000,
+            'brief'    => '<p>🔥Good for 12 pax🔥</p>
+<p>* 12 VIP Tickets</p>
+<p>* (1) Grey Goose 750ml</p>
+<p>* (2) Bacardi Gold</p>
+<p>* (10) Redbull</p>
+<p>* (5) 1.5L Coke</p>
+<p>* (1) Whole Lechon</p>',
+            'description' => '<ul class="list">
+                                <li> 🔥Good for 12 pax🔥</li>
+                                <li> 12 VIP Tickets</li>
+                                <li> (1) Grey Goose 750ml</li>
+                                <li> (2) Bacardi Gold</li>
+                                <li> (10) Redbull</li>
+                                <li> (5) 1.5L Coke</li>
+                                <li> (1) Whole Lechon</li>
+                            </ul>',
+            'avatar_first' => 'images/82253736_2277616679006372_555321284049764352_n.jpg'
+        ]);
 
-        for ( $i = 1; $i < 4001; $i++ ) {
+        Product::create([
+            'name'     => 'Second Floor Tables',
+            'price'    => 30000,
+            'quantity' => 5000,
+            'brief'    => '<p>🔥Good for 12 pax🔥</p>
+<p>* 12 VIP Tickets</p>
+<p>* (1) Grey Goose 750ml</p>
+<p>* (2) Bacardi Gold</p>
+<p>* (10) Redbull</p>
+<p>* (5) 1.5L Coke</p>
+<p>* (1) Whole Lechon</p>',
+            'description' => '<ul class="list">
+                                <li> 🔥Good for 12 pax🔥</li>
+                                <li> 12 VIP Tickets</li>
+                                <li> (1) Grey Goose 750ml</li>
+                                <li> (2) Bacardi Gold</li>
+                                <li> (10) Redbull</li>
+                                <li> (5) 1.5L Coke</li>
+                                <li> (1) Whole Lechon</li>
+                            </ul>',
+            'avatar_first' => 'images/83062936_482361212474147_2866091368076279808_n.jpg'
+        ]);
 
-            $serial = Serial::generate_serial_number();
+        Variation::create([
+            'name' => ''
+        ]);
 
-            Serial::create([
-                'number' => $serial,
-                'status' => 'available'
-            ]);
-        }
+
+        // for ( $i = 1; $i < 4001; $i++ ) {
+
+        //     $serial = Serial::generate_serial_number();
+
+        //     Serial::create([
+        //         'number' => $serial,
+        //         'status' => 'available'
+        //     ]);
+        // }
     }
 }

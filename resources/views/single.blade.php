@@ -73,7 +73,7 @@
 
                     <hr>
 
-                    <p class="desc">{{ $product->description }}</p>
+                    {!! $product->description !!}
 
                     <hr>
 
@@ -91,7 +91,7 @@
                 </div>
             </div>
 
-            <div class="row" id="paypal" style="display: none;">
+            <div class="row justify-content-center text-center" id="paypal" style="display: none;">
 
                 @if ( $product->id == 1 ) 
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12" id="vipticket">
@@ -102,7 +102,7 @@
                             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                         </form>
                     </div>
-                @else
+                @elseif ( $product->id == 2 )
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12" id="genadticket">
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                             <input type="hidden" name="cmd" value="_s-xclick">
@@ -110,6 +110,52 @@
                             <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                         </form>
+                    </div>
+                @elseif ( $product->id == 3 )
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12" id="groundfloor">
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="TDVG4UVJU2CRE">
+                        <table class="table table-bordered">
+                            <tr>
+                                <td>
+                                    <input type="hidden" name="on0" value="Tables">Tables
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="os0" class="form-control">
+                                        <option value="Table 3">Table 3 </option>
+                                        <option value="Table 4">Table 4 </option>
+                                    </select> 
+                                </td>
+                            </tr>
+                        </table>
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                    </div>
+                @elseif ( $product->id == 4 )
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12" id="secondfloor">
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="CBXWGD5AYGB5Y">
+                        <table class="table table-bordered">
+                        <tr><td><input type="hidden" name="on0" value="Tables">Tables</td></tr><tr><td><select class="form-control" name="os0">
+                            <option value="Table 1">Table 1 </option>
+                            <option value="Table 2">Table 2 </option>
+                            <option value="Table 3">Table 3 </option>
+                            <option value="Table 4">Table 4 </option>
+                            <option value="Table 9">Table 9 </option>
+                            <option value="Table 12">Table 12 </option>
+                            <option value="Table 13">Table 13 </option>
+                            <option value="Table 14">Table 14 </option>
+                        </select> </td></tr>
+                        </table>
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+
                     </div>
                 @endif
             </div>

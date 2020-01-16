@@ -27,4 +27,9 @@ class Product extends Model
     {
         return $this->hasMany( Serial::class );
     }
+
+    public function variations()
+    {
+        return $this->hasMany( Variation::class );
+    }
 }
