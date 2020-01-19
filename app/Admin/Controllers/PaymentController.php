@@ -39,6 +39,16 @@ class PaymentController extends AdminController
         $grid->column('status', __('Status'));
         $grid->column('created_at', __('Created at'));
 
+        $grid->filter(function($filter){
+
+            // Remove the default id filter
+            $filter->disableIdFilter();
+
+            // Add a column filter
+            $filter->like('order.order_number', 'Order Number');
+
+        });
+
         return $grid;
     }
 

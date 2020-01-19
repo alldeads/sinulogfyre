@@ -33,6 +33,18 @@ class SerialController extends AdminController
         $grid->column('status', __('Status'));
         $grid->column('created_at', __('Created at'));
 
+        $grid->filter(function($filter){
+
+            // Remove the default id filter
+            $filter->disableIdFilter();
+
+            // Add a column filter
+            $filter->like('number', 'Serial');
+
+            $filter->equal('payment_id', 'Payment ID');
+
+        });
+
         return $grid;
     }
 
@@ -68,7 +80,7 @@ class SerialController extends AdminController
         $form->number('payment_id', __('Payment id'));
         $form->select('product_id', __('Ticket'))->options([1 => 'VIP Ticket', 2 => 'GEN AD Ticket']);
         $form->text('number', __('Number'));
-        $form->select('status', __('Status'))->options(['available' => 'Available', 'used' => 'Used']);
+        $form->select('status', __('Status'))->options(['available' => 'Available', 'used' => 'Used', 'blocked' => 'Blocked', 'duplicated' => 'Cancelled']);
 
         return $form;
     }
