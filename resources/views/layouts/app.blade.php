@@ -32,6 +32,8 @@
         <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
         <!-- //google fonts -->
 
+        <script data-ad-client="ca-pub-8455059925989989" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
         @yield('extra_css')
     </head>
 
