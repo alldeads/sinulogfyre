@@ -12,6 +12,8 @@
 
     <link rel="stylesheet" type="text/css" href="{{ asset('css/first.css') }}">
     <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
+
+    <script data-ad-client="ca-pub-8455059925989989" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 
 <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #1e1e1f;">
